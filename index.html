@@ -138,7 +138,7 @@
         .custom-list li .icon {
             flex-shrink: 0;
             margin-right: 0.75rem;
-            margin-top: 0.25rem;
+            margin-top: 0.4rem; /* Adjusted for better vertical alignment */
         }
         .custom-list li .text-content {
             flex-grow: 1;
@@ -182,17 +182,21 @@
                 </div>
 
                 <!-- Warum ist es relevant? -->
-                <div class="max-w-3xl mx-auto bg-light-blue p-8 rounded-xl shadow-2xl border-2 border-tech-green">
+                <div class="max-w-3xl mx-auto bg-light-blue p-8 rounded-xl shadow-2xl text-left">
                     <h3 class="text-3xl font-montserrat font-bold text-accent-turquoise mb-6">Warum ist es relevant?</h3>
-                    <ul class="list-disc list-outside pl-5 text-lg text-grey-text space-y-4 text-left">
+                    <ul class="custom-list space-y-4 text-lg text-grey-text">
                         <li>
-                            <div class="tooltip-container">
-                                Potenzial zur Revolutionierung der Gesundheitsversorgung und Lebenswissenschaften
-                                <span class="tooltip-content">Quelle: 5. Allgemeine Entwicklung von KI im Gesundheitswesen: IBM Research Blog - History of AI in Healthcare</span>
-                            </div>
+                            <i class="icon fas fa-circle text-tech-green text-xs"></i>
+                            <div class="text-content">Potenzial zur Revolutionierung der Gesundheitsversorgung und Lebenswissenschaften.<sup>[5]</sup></div>
                         </li>
-                        <li>Ermöglicht Präzision, Effizienz und Personalisierung in Bereichen, die traditionell datenintensiv und komplex sind.</li>
-                        <li>Kann menschliches Leben verlängern und verbessern.</li>
+                        <li>
+                            <i class="icon fas fa-circle text-tech-green text-xs"></i>
+                            <div class="text-content">Ermöglicht Präzision, Effizienz und Personalisierung in Bereichen, die traditionell datenintensiv und komplex sind.</div>
+                        </li>
+                        <li>
+                            <i class="icon fas fa-circle text-tech-green text-xs"></i>
+                            <div class="text-content">Kann menschliches Leben verlängern und verbessern.</div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -208,80 +212,71 @@
                 <div class="grid md:grid-cols-2 gap-12 items-start">
                     <div>
                         <h3 class="text-2xl font-montserrat font-semibold text-tech-green mb-4">Grundlagen der KI</h3>
-                        <p class="mb-8">
+                        <p class="mb-8 text-left">
                             In den frühen Jahrzehnten der KI-Forschung wurden die theoretischen Grundlagen für intelligente Systeme gelegt. Dies umfasste Konzepte wie symbolische Logik, Suchalgorithmen und die Idee, menschliches Denken in computergestützte Regeln zu übersetzen.
                         </p>
 
                         <h3 class="text-2xl font-montserrat font-semibold text-tech-green mb-4">Expertensysteme als Pioniere</h3>
-                        <div class="bg-light-blue p-8 rounded-xl shadow-lg mb-8 border border-dark-violet">
-                            <p class="text-lg mb-4">
-                                <strong class="text-accent-turquoise">Konzept:</strong> Regelbasierte Systeme, die menschliches Expertenwissen in einer bestimmten Domäne kodifizierten, um Entscheidungen zu treffen oder Empfehlungen zu geben.
-                            </p>
-                            <div class="bg-dark-violet p-6 rounded-lg shadow-inner border border-tech-green">
-                                <h4 class="text-xl font-montserrat font-bold text-accent-turquoise mb-3">
-                                    <div class="tooltip-container">
-                                        MYCIN (ca. 1972-1976)
-                                        <span class="tooltip-content">Quelle: 1. MYCIN Expert System: Wikipedia - MYCIN</span>
-                                    </div>
-                                </h4>
-                                <ul class="list-disc list-outside pl-5 space-y-2">
-                                    <li><strong class="text-tech-green">Ziel:</strong> Diagnose von Infektionskrankheiten (insbesondere Bakteriämie und Meningitis) und Empfehlung von Antibiotika-Therapien.</li>
-                                    <li><strong class="text-tech-green">Arbeitsweise:</strong> Nutzung von über 500 Regeln, die von Medizinern kodifiziert wurden. Stellt Fragen zum Patienten, um Schlussfolgerungen zu ziehen.</li>
-                                    <li><strong class="text-tech-green">Bedeutung:</strong> Zeigte das Potenzial von KI in der medizinischen Entscheidungsfindung, auch wenn es nie breite klinische Anwendung fand (hauptsächlich wegen ethischer Bedenken, Haftungsfragen und der Schwierigkeit der Wissensakquise).</li>
-                                </ul>
-                            </div>
-                            <p class="mt-6 text-base">
-                                <strong class="text-tech-green">Internist-I/CADUCEUS (1970er-1980er):</strong> Ein weiteres frühes Expertensystem zur Diagnose interner Erkrankungen, das eine breitere Wissensbasis als MYCIN anstrebte.
-                            </p>
+                        <p class="text-lg mb-4 text-left">
+                            <strong class="text-accent-turquoise">Konzept:</strong> Regelbasierte Systeme, die menschliches Expertenwissen in einer bestimmten Domäne kodifizierten, um Entscheidungen zu treffen oder Empfehlungen zu geben.
+                        </p>
+                        <div class="bg-dark-violet p-6 rounded-lg shadow-inner mb-4 text-left">
+                            <h4 class="text-xl font-montserrat font-bold text-accent-turquoise mb-3">MYCIN (ca. 1972-1976)<sup>[1]</sup></h4>
+                            <ul class="list-disc list-outside pl-5 space-y-2">
+                                <li><strong class="text-tech-green">Ziel:</strong> Diagnose von Infektionskrankheiten (insbesondere Bakteriämie und Meningitis) und Empfehlung von Antibiotika-Therapien.</li>
+                                <li><strong class="text-tech-green">Arbeitsweise:</strong> Nutzung von über 500 Regeln, die von Medizinern kodifiziert wurden. Stellt Fragen zum Patienten, um Schlussfolgerungen zu ziehen.</li>
+                                <li><strong class="text-tech-green">Bedeutung:</strong> Zeigte das Potenzial von KI in der medizinischen Entscheidungsfindung, auch wenn es nie breite klinische Anwendung fand (hauptsächlich wegen ethischer Bedenken, Haftungsfragen und der Schwierigkeit der Wissensakquise).</li>
+                            </ul>
                         </div>
+                        <p class="mt-6 text-base mb-8 text-left">
+                            <strong class="text-tech-green">Internist-I/CADUCEUS (1970er-1980er):</strong> Ein weiteres frühes Expertensystem zur Diagnose interner Erkrankungen, das eine breitere Wissensbasis als MYCIN anstrebte.
+                        </p>
 
                         <h3 class="text-2xl font-montserrat font-semibold text-tech-green mb-4">Datenbank-basierte Ansätze</h3>
-                        <p class="mb-8">
+                        <p class="mb-8 text-left">
                             Parallel zu Expertensystemen wurden auch frühe Versuche unternommen, medizinische Informationen in Datenbanken zu strukturieren und für Such- und Abfragezwecke nutzbar zu machen, oft mit einfachen statistischen Methoden.
                         </p>
                     </div>
 
-                    <div class="md:text-center relative">
-                        <!-- Stylized Timeline/Flowchart -->
-                        <div class="relative flex flex-col items-center py-8">
-                            <div class="w-1 bg-dark-violet h-full absolute inset-y-0 left-1/2 transform -translate-x-1/2 rounded-full"></div>
-
-                            <div class="flex items-center w-full my-6">
-                                <div class="bg-tech-green p-3 rounded-full z-10 shadow-xl border-2 border-light-blue">
-                                    <i class="fas fa-lightbulb text-2xl text-primary-blue"></i>
-                                </div>
-                                <div class="flex-grow bg-light-blue h-1 rounded-full absolute w-1/2 left-0 z-0"></div>
-                                <div class="flex-grow bg-light-blue p-6 rounded-xl shadow-lg border border-tech-green ml-4 text-left relative z-10 w-full md:w-auto">
-                                    <h4 class="text-xl font-montserrat font-bold text-accent-turquoise mb-2">1950er: Geburt der KI</h4>
-                                    <p>Erste Konzepte und theoretische Grundlagen der künstlichen Intelligenz.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center w-full my-6 flex-row-reverse">
-                                <div class="bg-tech-green p-3 rounded-full z-10 shadow-xl border-2 border-light-blue">
-                                    <i class="fas fa-stethoscope text-2xl text-primary-blue"></i>
-                                </div>
-                                <div class="flex-grow bg-light-blue h-1 rounded-full absolute w-1/2 right-0 z-0"></div>
-                                <div class="flex-grow bg-light-blue p-6 rounded-xl shadow-lg border border-tech-green mr-4 text-right relative z-10 w-full md:w-auto">
-                                    <h4 class="text-xl font-montserrat font-bold text-accent-turquoise mb-2">1970er: MYCIN & Expertensysteme</h4>
-                                    <p>Erste medizinische Expertensysteme zur Diagnoseunterstützung.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center w-full my-6">
-                                <div class="bg-tech-green p-3 rounded-full z-10 shadow-xl border-2 border-light-blue">
-                                    <i class="fas fa-database text-2xl text-primary-blue"></i>
-                                </div>
-                                <div class="flex-grow bg-light-blue h-1 rounded-full absolute w-1/2 left-0 z-0"></div>
-                                <div class="flex-grow bg-light-blue p-6 rounded-xl shadow-lg border border-tech-green ml-4 text-left relative z-10 w-full md:w-auto">
-                                    <h4 class="text-xl font-montserrat font-bold text-accent-turquoise mb-2">1980er: Datenbank-Ansätze</h4>
-                                    <p>Fokus auf strukturierte medizinische Datenbanken und Informationssysteme.</p>
-                                </div>
-                            </div>
+                    <div>
+                        <!-- Left-aligned Timeline -->
+                        <div class="relative mt-8">
+                            <ul class="space-y-8">
+                                <!-- Timeline Item 1 -->
+                                <li class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 bg-tech-green w-10 h-10 rounded-full flex items-center justify-center shadow-xl border-2 border-light-blue mt-1">
+                                        <i class="fas fa-lightbulb text-xl text-primary-blue"></i>
+                                    </div>
+                                    <div class="bg-light-blue p-6 rounded-xl shadow-lg w-full">
+                                        <h4 class="text-xl font-montserrat font-bold text-accent-turquoise mb-2">1950er: Geburt der KI</h4>
+                                        <p>Erste Konzepte und theoretische Grundlagen der künstlichen Intelligenz.</p>
+                                    </div>
+                                </li>
+                                <!-- Timeline Item 2 -->
+                                 <li class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 bg-tech-green w-10 h-10 rounded-full flex items-center justify-center shadow-xl border-2 border-light-blue mt-1">
+                                        <i class="fas fa-stethoscope text-xl text-primary-blue"></i>
+                                    </div>
+                                    <div class="bg-light-blue p-6 rounded-xl shadow-lg w-full">
+                                        <h4 class="text-xl font-montserrat font-bold text-accent-turquoise mb-2">1970er: MYCIN & Expertensysteme</h4>
+                                        <p>Erste medizinische Expertensysteme zur Diagnoseunterstützung.</p>
+                                    </div>
+                                </li>
+                                <!-- Timeline Item 3 -->
+                                <li class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 bg-tech-green w-10 h-10 rounded-full flex items-center justify-center shadow-xl border-2 border-light-blue mt-1">
+                                        <i class="fas fa-database text-xl text-primary-blue"></i>
+                                    </div>
+                                    <div class="bg-light-blue p-6 rounded-xl shadow-lg w-full">
+                                        <h4 class="text-xl font-montserrat font-bold text-accent-turquoise mb-2">1980er: Datenbank-Ansätze</h4>
+                                        <p>Fokus auf strukturierte medizinische Datenbanken und Informationssysteme.</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
 
-                        <h3 class="text-2xl font-montserrat font-semibold text-tech-green mb-6 mt-12 text-center">Herausforderungen der frühen Phase</h3>
-                        <ul class="space-y-4 text-lg bg-light-blue p-8 rounded-xl shadow-lg border border-dark-violet text-left custom-list">
+                        <h3 class="text-2xl font-montserrat font-semibold text-tech-green mb-6 mt-12 text-left">Herausforderungen der frühen Phase</h3>
+                        <ul class="space-y-4 text-lg bg-light-blue p-8 rounded-xl shadow-lg text-left custom-list">
                             <li>
                                 <i class="icon fas fa-times-circle text-red-500"></i>
                                 <div class="text-content tooltip-container">
@@ -317,15 +312,15 @@
         </section>
 
         <!-- Section 3: Schlüsselinnovationen und Wachstum -->
-        <section id="schluessel-innovationen" class="bg-dark-violet py-20 px-4">
-            <div class="container mx-auto">
+        <section id="schluessel-innovationen" class="intro-background py-20 px-4 relative">
+            <div class="container mx-auto relative z-10">
                 <h2 class="text-4xl font-montserrat font-bold text-accent-turquoise text-center mb-12">
                     Schlüsselinnovationen und Wachstum (1990er - 2010er Jahre)
                 </h2>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Innovation Card 1: Always Open -->
-                    <div class="bg-light-blue rounded-xl shadow-lg border border-tech-green p-6 flex flex-col h-full">
+                    <div class="bg-light-blue rounded-xl shadow-lg p-6 flex flex-col h-full">
                         <div class="flex items-center gap-4 mb-4">
                             <i class="fas fa-chart-line text-4xl text-tech-green"></i>
                             <h3 class="text-xl font-montserrat font-semibold text-accent-turquoise">Fortschritte in der Datenverarbeitung</h3>
@@ -338,7 +333,7 @@
                     </div>
 
                     <!-- Innovation Card 2: Always Open -->
-                    <div class="bg-light-blue rounded-xl shadow-lg border border-tech-green p-6 flex flex-col h-full">
+                    <div class="bg-light-blue rounded-xl shadow-lg p-6 flex flex-col h-full">
                         <div class="flex items-center gap-4 mb-4">
                             <i class="fas fa-robot text-4xl text-tech-green"></i>
                             <h3 class="text-xl font-montserrat font-semibold text-accent-turquoise">Aufkommen des Maschinellen Lernens</h3>
@@ -351,7 +346,7 @@
                     </div>
 
                     <!-- Innovation Card 3: Always Open -->
-                    <div class="bg-light-blue rounded-xl shadow-lg border border-tech-green p-6 flex flex-col h-full">
+                    <div class="bg-light-blue rounded-xl shadow-lg p-6 flex flex-col h-full">
                         <div class="flex items-center gap-4 mb-4">
                             <i class="fas fa-cloud text-4xl text-tech-green"></i>
                             <h3 class="text-xl font-montserrat font-semibold text-accent-turquoise">Big Data und Cloud Computing</h3>
@@ -363,17 +358,19 @@
                         </div>
                     </div>
                      <!-- Innovation Card 4: Always Open -->
-                    <div class="bg-light-blue rounded-xl shadow-lg border border-tech-green p-6 flex flex-col h-full">
+                    <div class="bg-light-blue rounded-xl shadow-lg p-6 flex flex-col h-full">
                         <div class="flex items-center gap-4 mb-4">
                             <i class="fas fa-image text-4xl text-tech-green"></i>
                             <h3 class="text-xl font-montserrat font-semibold text-accent-turquoise">Durchbruch der Bilderkennung</h3>
                         </div>
                         <div class="text-left flex-grow">
                             <p class="mb-4">
-                                Erste <div class="tooltip-container inline">
-                                    computergestützte Diagnosesysteme (CAD)
-                                    <span class="tooltip-content">Quelle: 6. Bilderkennung in der Medizin: Nature - AI in Medical Imaging</span>
-                                </div> nutzten traditionelle Bildverarbeitungsalgorithmen zur Detektion von Auffälligkeiten in medizinischen Bildern (z.B. Mammographie).
+                                Erste 
+                                <span class="tooltip-container">
+                                    computergestützte Diagnosesysteme (CAD)<sup>[6]</sup>
+                                    <span class="tooltip-content">Systeme, die Radiologen bei der Befundung von medizinischen Bildern unterstützen.</span>
+                                </span> 
+                                nutzten traditionelle Bildverarbeitungsalgorithmen zur Detektion von Auffälligkeiten in medizinischen Bildern (z.B. Mammographie).
                             </p>
                             <p>
                                 <strong class="text-tech-green">Wichtigkeit:</strong> Automatisierte Analyse half, die Arbeitslast von Radiologen zu reduzieren und Potenziale für eine erhöhte Detektionsrate aufzuzeigen.
@@ -381,7 +378,7 @@
                         </div>
                     </div>
                      <!-- Innovation Card 5: Always Open -->
-                    <div class="bg-light-blue rounded-xl shadow-lg border border-tech-green p-6 flex flex-col h-full">
+                    <div class="bg-light-blue rounded-xl shadow-lg p-6 flex flex-col h-full">
                         <div class="flex items-center gap-4 mb-4">
                             <i class="fas fa-flask text-4xl text-tech-green"></i>
                             <h3 class="text-xl font-montserrat font-semibold text-accent-turquoise break-words">KI-gestützte Medikamentenentwicklung</h3>
@@ -410,10 +407,10 @@
 
                 <!-- Comparison: Expert Systems vs. Deep Learning -->
                 <div class="grid md:grid-cols-2 gap-8 mb-16">
-                    <div class="bg-light-blue p-8 rounded-xl shadow-lg border-2 border-dark-violet">
-                        <h4 class="text-2xl font-montserrat font-bold text-accent-turquoise mb-6 text-center">Expertensysteme (Regelbasiert)</h4>
-                        <div class="flex justify-center mb-6">
-                            <i class="fas fa-cogs text-6xl text-tech-green"></i>
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center gap-4 mb-6">
+                            <i class="fas fa-cogs text-5xl text-tech-green"></i>
+                            <h4 class="text-2xl font-montserrat font-bold text-accent-turquoise">Expertensysteme (Regelbasiert)</h4>
                         </div>
                         <ul class="list-disc list-outside pl-5 space-y-3 text-lg text-left">
                             <li><strong class="text-tech-green">Wissensbasis:</strong> Von Experten kodifizierte "Wenn-Dann"-Regeln.</li>
@@ -424,10 +421,10 @@
                         </ul>
                     </div>
 
-                    <div class="bg-light-blue p-8 rounded-xl shadow-lg border-2 border-tech-green">
-                        <h4 class="text-2xl font-montserrat font-bold text-accent-turquoise mb-6 text-center">Deep Learning (Mustererkennung)</h4>
-                        <div class="flex justify-center mb-6">
-                            <i class="fas fa-network-wired text-6xl text-dark-violet"></i>
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center gap-4 mb-6">
+                            <i class="fas fa-network-wired text-5xl text-dark-violet"></i>
+                             <h4 class="text-2xl font-montserrat font-bold text-accent-turquoise">Deep Learning (Mustererkennung)</h4>
                         </div>
                         <ul class="list-disc list-outside pl-5 space-y-3 text-lg text-left">
                             <li><strong class="text-tech-green">Wissensbasis:</strong> Riesige Mengen von Daten (Bilder, Texte, Genomdaten).</li>
@@ -444,7 +441,7 @@
                 <div class="grid md:grid-cols-2 gap-10">
 
                     <!-- KI-gestützte Diagnostik -->
-                    <div class="bg-light-blue p-8 rounded-xl shadow-lg border border-accent-turquoise">
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
                         <h4 class="text-2xl font-montserrat font-bold text-accent-turquoise mb-4">KI-gestützte Diagnostik</h4>
                         <p class="text-lg mb-4 text-left">
                             <div class="tooltip-container inline">
@@ -456,36 +453,33 @@
                             <li><strong class="text-tech-green">Beispiele:</strong> Krebsfrüherkennung (Mammographien, CTs, MRTs, Hautkrebsdiagnose), Diabetische Retinopathie, Pathologie.</li>
                             <li><strong class="text-tech-green">Vorteile:</strong> Erhöhte Genauigkeit, beschleunigte Analysen, Unterstützung bei der Befunderstellung.</li>
                         </ul>
-                        <img src="https://placehold.co/600x300/1A3450/00FFFF?text=KI+Diagnose+MRT" alt="KI Diagnose MRT" class="w-full rounded-xl shadow-md mt-6 object-cover">
+                        <img src="ki-diagnose-mrt.png" alt="KI Diagnose MRT" class="w-full rounded-xl shadow-md mt-6 object-cover">
                     </div>
 
                     <!-- Beschleunigte Medikamentenentwicklung -->
-                    <div class="bg-light-blue p-8 rounded-xl shadow-lg border border-accent-turquoise">
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
                         <h4 class="text-2xl font-montserrat font-bold text-accent-turquoise mb-4">Beschleunigte Medikamentenentwicklung</h4>
                         <p class="text-lg mb-4 text-left">
                             <strong class="text-tech-green">Drug Discovery:</strong> KI identifiziert vielversprechende Moleküle, sagt Eigenschaften voraus.
                         </p>
                         <p class="text-lg mb-4 text-left">
-                            <div class="tooltip-container inline">
-                                AlphaFold (DeepMind, 2020/2021)
-                                <span class="tooltip-content">Quelle: 2. AlphaFold (DeepMind): DeepMind - AlphaFold</span>
-                            </div>: Revolutionärer Durchbruch bei der Vorhersage der 3D-Struktur von Proteinen, fundamental für Medikamentenentwicklung.
+                            AlphaFold (DeepMind, 2020/2021)<sup>[2]</sup>: Revolutionärer Durchbruch bei der Vorhersage der 3D-Struktur von Proteinen, fundamental für Medikamentenentwicklung.
                         </p>
                         <p class="text-lg mb-4 text-left">
                             <strong class="text-tech-green">Optimierung klinischer Studien:</strong> KI hilft bei der Identifizierung geeigneter Patienten und der Analyse von Studiendaten.
                         </p>
-                        <img src="https://placehold.co/600x300/1A3450/00FFFF?text=Medikamentenentwicklung" alt="Medikamentenentwicklung" class="w-full rounded-xl shadow-md mt-6 object-cover">
+                        <img src="medikamentenentwicklung.png" alt="Medikamentenentwicklung" class="w-full rounded-xl shadow-md mt-6 object-cover">
                     </div>
 
                     <!-- Robotik in der Chirurgie -->
-                    <div class="md:col-span-2 bg-light-blue p-8 rounded-xl shadow-lg border border-accent-turquoise">
+                    <div class="md:col-span-2 bg-light-blue p-8 rounded-xl shadow-lg">
                         <h4 class="text-2xl font-montserrat font-bold text-accent-turquoise mb-4">Robotik in der Chirurgie</h4>
                         <p class="text-lg mb-4 text-left">
                             Roboterassistierte Chirurgie (z. B. Da Vinci-System) erhöht Präzision; KI-gestützte Navigationssysteme verbessern die Genauigkeit und Sicherheit von Eingriffen.
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                            <img src="https://placehold.co/600x300/1A3450/00FFFF?text=Chirurgie+Roboter" alt="Chirurgie Roboter" class="w-full rounded-xl shadow-md object-cover">
-                            <img src="https://placehold.co/600x300/1A3450/00FFFF?text=Wearable+Gesundheit" alt="Wearable Gesundheit" class="w-full rounded-xl shadow-md object-cover">
+                            <img src="chirurgie-roboter.png" alt="Chirurgie Roboter" class="w-full rounded-xl shadow-md object-cover">
+                            <img src="wearable-gesundheit.png" alt="Wearable Gesundheit" class="w-full rounded-xl shadow-md object-cover">
                         </div>
                     </div>
                 </div>
@@ -493,30 +487,30 @@
         </section>
 
         <!-- Section 5: Entwicklungstendenzen und Versprechen -->
-        <section id="entwicklungstendenzen" class="bg-dark-violet py-20 px-4">
-            <div class="container mx-auto">
+        <section id="entwicklungstendenzen" class="intro-background py-20 px-4 relative">
+            <div class="container mx-auto relative z-10">
                 <h2 class="text-4xl font-montserrat font-bold text-accent-turquoise text-center mb-12">
                     Entwicklungstendenzen und Versprechen
                 </h2>
 
                 <h3 class="text-3xl font-montserrat font-semibold text-tech-green mb-8 text-center">Wichtige Trends in der KI-Medizin</h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-                    <div class="bg-light-blue p-6 rounded-xl shadow-lg border border-tech-green text-center">
+                    <div class="bg-light-blue p-6 rounded-xl shadow-lg text-center">
                         <i class="fas fa-layer-group text-5xl text-accent-turquoise mb-4"></i>
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Multimodale KI</h4>
                         <p>Integration verschiedener Datenarten (Bilder, Texte, Genomdaten) für umfassendere Analysen.</p>
                     </div>
-                    <div class="bg-light-blue p-6 rounded-xl shadow-lg border border-tech-green text-center">
+                    <div class="bg-light-blue p-6 rounded-xl shadow-lg text-center">
                         <i class="fas fa-question-circle text-5xl text-accent-turquoise mb-4"></i>
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Erklärbare KI (XAI)</h4>
                         <p>Modelle, deren Entscheidungen nachvollziehbar und transparent sind, erhöht das Vertrauen.</p>
                     </div>
-                    <div class="bg-light-blue p-6 rounded-xl shadow-lg border border-tech-green text-center">
+                    <div class="bg-light-blue p-6 rounded-xl shadow-lg text-center">
                         <i class="fas fa-shield-alt text-5xl text-accent-turquoise mb-4"></i>
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Federated Learning</h4>
                         <p>Training von KI-Modellen über dezentrale Datensätze hinweg unter Wahrung des Datenschutzes.</p>
                     </div>
-                    <div class="bg-light-blue p-6 rounded-xl shadow-lg border border-tech-green text-center">
+                    <div class="bg-light-blue p-6 rounded-xl shadow-lg text-center">
                         <i class="fas fa-cube text-5xl text-accent-turquoise mb-4"></i>
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Digital Twins</h4>
                         <p>Virtuelle Modelle von Patienten zur Simulation von Krankheitsverläufen und Therapieantworten.</p>
@@ -533,19 +527,19 @@
                         <div class="space-y-4">
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">2020</span><span class="text-tech-green">6.6 Mrd. USD</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-accent-turquoise h-3 rounded-full" style="width: 25%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--accent-turquoise); width: 25%;"></div></div>
                             </div>
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">2022</span><span class="text-tech-green">15.1 Mrd. USD</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-accent-turquoise h-3 rounded-full" style="width: 50%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--accent-turquoise); width: 50%;"></div></div>
                             </div>
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">2024</span><span class="text-tech-green">28.5 Mrd. USD</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-accent-turquoise h-3 rounded-full" style="width: 80%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--accent-turquoise); width: 80%;"></div></div>
                             </div>
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">2025 (Proj.)</span><span class="text-tech-green">40 Mrd. USD</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-accent-turquoise h-3 rounded-full" style="width: 100%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--accent-turquoise); width: 100%;"></div></div>
                             </div>
                         </div>
                     </div>
@@ -556,19 +550,19 @@
                          <div class="space-y-4">
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">2018</span><span class="text-tech-green">~4.000</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-accent-turquoise h-3 rounded-full" style="width: 33%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--accent-turquoise); width: 33%;"></div></div>
                             </div>
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">2020</span><span class="text-tech-green">~6.500</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-accent-turquoise h-3 rounded-full" style="width: 54%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--accent-turquoise); width: 54%;"></div></div>
                             </div>
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">2022</span><span class="text-tech-green">~8.500</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-accent-turquoise h-3 rounded-full" style="width: 71%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--accent-turquoise); width: 71%;"></div></div>
                             </div>
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">2024 (Proj.)</span><span class="text-tech-green">~12.000</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-accent-turquoise h-3 rounded-full" style="width: 100%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--accent-turquoise); width: 100%;"></div></div>
                             </div>
                         </div>
                     </div>
@@ -579,15 +573,15 @@
                          <div class="space-y-4">
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">Menschlicher Radiologe</span><span class="text-red-400">~3.5%</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-red-500 h-3 rounded-full" style="width: 100%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="bg-red-500 h-3 rounded-full" style="width: 100%"></div></div>
                             </div>
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">KI-System (allein)</span><span class="text-yellow-400">~2.0%</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-yellow-500 h-3 rounded-full" style="width: 57%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="bg-yellow-500 h-3 rounded-full" style="width: 57%"></div></div>
                             </div>
                             <div class="w-full">
                                 <div class="flex justify-between items-center mb-1"><span class="font-bold">Mensch + KI</span><span class="text-tech-green">&lt; 1%</span></div>
-                                <div class="w-full bg-primary-blue rounded-full h-3"><div class="bg-tech-green h-3 rounded-full" style="width: 28%"></div></div>
+                                <div class="w-full rounded-full h-3" style="background-color: var(--primary-blue);"><div class="h-3 rounded-full" style="background-color: var(--tech-green); width: 28%"></div></div>
                             </div>
                         </div>
                         <p class="text-sm text-center text-dark-grey-text mt-4">
@@ -598,8 +592,8 @@
 
                 <!-- Chancen und Risiken -->
                 <div class="grid md:grid-cols-2 gap-10">
-                    <div class="bg-light-blue p-8 rounded-xl shadow-lg border-2 border-tech-green">
-                        <h3 class="text-2xl font-montserrat font-bold text-tech-green mb-6 text-center">Gegenwärtige Chancen</h3>
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-montserrat font-bold text-tech-green mb-6 text-left">Gegenwärtige Chancen</h3>
                         <ul class="space-y-3 text-lg text-left custom-list">
                             <li><i class="icon fas fa-check-circle text-tech-green"></i><span class="text-content">Frühere und präzisere Diagnosen.</span></li>
                             <li><i class="icon fas fa-check-circle text-tech-green"></i><span class="text-content">Entwicklung neuer, wirksamerer Therapien.</span></li>
@@ -608,15 +602,12 @@
                             <li><i class="icon fas fa-check-circle text-tech-green"></i><span class="text-content">Zugang zu medizinischem Wissen in ressourcenarmen Regionen.</span></li>
                         </ul>
                     </div>
-                    <div class="bg-light-blue p-8 rounded-xl shadow-lg border-2 border-dark-violet">
-                        <h3 class="text-2xl font-montserrat font-bold text-dark-violet mb-6 text-center">Gegenwärtige Risiken</h3>
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-montserrat font-bold text-dark-violet mb-6 text-left">Gegenwärtige Risiken</h3>
                         <ul class="space-y-3 text-lg text-left custom-list">
                             <li>
                                 <i class="icon fas fa-exclamation-triangle text-red-500"></i>
-                                <span class="text-content tooltip-container">
-                                    Datenschutz und Datensicherheit sensibler Patientendaten
-                                    <span class="tooltip-content">Quelle: 4. Ethische Aspekte von KI in der Medizin: Europäische Kommission - Ethik-Leitlinien für vertrauenswürdige KI</span>
-                                </span>
+                                <span class="text-content">Datenschutz und Datensicherheit sensibler Patientendaten.<sup>[4]</sup></span>
                             </li>
                             <li><i class="icon fas fa-exclamation-triangle text-red-500"></i><span class="text-content">Fehler und Haftung bei KI-Systemen.</span></li>
                             <li><i class="icon fas fa-exclamation-triangle text-red-500"></i><span class="text-content">Algorithmische Verzerrung (Bias) in Trainingsdaten.</span></li>
@@ -638,32 +629,32 @@
 
                 <h3 class="text-3xl font-montserrat font-semibold text-tech-green mb-8 text-center">Technologische Visionen</h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
-                    <div class="bg-light-blue p-6 rounded-xl shadow-lg border border-accent-turquoise text-center">
-                        <img src="https://placehold.co/400x250/0A192F/00FFFF?text=Hyper+Personalisierte+Medizin" alt="Hyper Personalisierte Medizin" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <div class="bg-light-blue p-6 rounded-xl shadow-lg text-center">
+                        <img src="https://placehold.co/600x400/1A3450/E0E0E0?text=Hyper-personalisierte+Medizin" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1A3450/E0E0E0?text=Bild';" alt="Hyper Personalisierte Medizin" class="w-full h-auto rounded-lg mb-4 object-cover">
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Hyper-personalisierte Medizin</h4>
                         <p>Kontinuierliche Überwachung durch Wearables/Implantate, Echtzeit-Empfehlungen oder sogar Medikamenten-Dosierung.</p>
                     </div>
-                    <div class="bg-light-blue p-6 rounded-xl shadow-lg border border-accent-turquoise text-center">
-                        <img src="https://placehold.co/400x250/0A192F/00FFFF?text=Virtuelle+Klinik" alt="Virtuelle Klinik" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <div class="bg-light-blue p-6 rounded-xl shadow-lg text-center">
+                        <img src="https://placehold.co/600x400/1A3450/E0E0E0?text=Virtuelle+Klinik" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1A3450/E0E0E0?text=Bild';" alt="Virtuelle Klinik" class="w-full h-auto rounded-lg mb-4 object-cover">
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Virtuelle Kliniken & "Medical Metaspace"</h4>
                         <p>Patienteninteraktionen, Diagnosen, Behandlungen in virtuellen Umgebungen.</p>
                     </div>
-                    <div class="bg-light-blue p-6 rounded-xl shadow-lg border border-accent-turquoise text-center">
-                        <img src="https://placehold.co/400x250/0A192F/00FFFF?text=Autonome+Chirurgie" alt="Autonome Chirurgie" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <div class="bg-light-blue p-6 rounded-xl shadow-lg text-center">
+                        <img src="https://placehold.co/600x400/1A3450/E0E0E0?text=Autonome+Chirurgie" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1A3450/E0E0E0?text=Bild';" alt="Autonome Chirurgie" class="w-full h-auto rounded-lg mb-4 object-cover">
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Intelligente Roboter in Pflege & Chirurgie</h4>
                         <p>Vollautomatisierte oder semi-autonome Aufgaben in der Gesundheitsversorgung.</p>
                     </div>
-                    <div class="bg-light-blue p-6 rounded-xl shadow-lg border border-accent-turquoise text-center">
-                        <img src="https://placehold.co/400x250/0A192F/00FFFF?text=Gesundheit+Vorhersage" alt="Gesundheit Vorhersage" class="w-full h-auto rounded-lg mb-4 object-cover">
+                    <div class="bg-light-blue p-6 rounded-xl shadow-lg text-center">
+                        <img src="https://placehold.co/600x400/1A3450/E0E0E0?text=Gesundheits-Vorhersage" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1A3450/E0E0E0?text=Bild';" alt="Gesundheit Vorhersage" class="w-full h-auto rounded-lg mb-4 object-cover">
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Predictive Health</h4>
                         <p>Vorhersage gesundheitlicher Probleme vor Symptomauftritt durch proaktive KI-Analyse.</p>
                     </div>
-                    <div class="md:col-span-2 bg-light-blue p-6 rounded-xl shadow-lg border border-accent-turquoise text-center">
+                    <div class="md:col-span-2 bg-light-blue p-6 rounded-xl shadow-lg text-center">
                         <i class="fas fa-microscope text-5xl text-accent-turquoise mb-4"></i>
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">Durchbrüche in der Biologie</h4>
                         <p>KI entschlüsselt komplexe biologische Prozesse (z.B. Alterung, Neurowissenschaften), was zu neuen Therapien führt.</p>
                     </div>
-                    <div class="md:col-span-2 bg-light-blue p-6 rounded-xl shadow-lg border border-accent-turquoise text-center">
+                    <div class="md:col-span-2 bg-light-blue p-6 rounded-xl shadow-lg text-center">
                         <i class="fas fa-industry text-5xl text-accent-turquoise mb-4"></i>
                         <h4 class="text-xl font-montserrat font-bold text-tech-green mb-2">KI-gesteuerte Medikamentenfabriken</h4>
                         <p>Vollautomatisierte Entwicklung und Produktion von On-Demand-Medikamenten.</p>
@@ -672,8 +663,8 @@
 
                 <h3 class="text-3xl font-montserrat font-semibold text-tech-green mb-8 text-center">Gesellschaftliche Aspekte und Ethische Reflexionen</h3>
                 <div class="grid md:grid-cols-2 gap-10">
-                    <div class="bg-light-blue p-8 rounded-xl shadow-lg border-2 border-tech-green">
-                        <h4 class="text-2xl font-montserrat font-bold text-tech-green mb-6 text-center">Gesellschaftliche Aspekte</h4>
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-montserrat font-bold text-tech-green mb-6 text-left">Gesellschaftliche Aspekte</h4>
                         <ul class="text-lg text-left space-y-3 custom-list">
                             <li><i class="icon fas fa-heartbeat text-tech-green"></i><span class="text-content">Längere und gesündere Lebensspanne für breite Bevölkerungsschichten.</span></li>
                             <li><i class="icon fas fa-globe-americas text-tech-green"></i><span class="text-content">Zugangsgerechtigkeit: Sicherstellen, dass KI-Lösungen global zugänglich sind.</span></li>
@@ -681,8 +672,8 @@
                             <li><i class="icon fas fa-coins text-tech-green"></i><span class="text-content">Gesundheitsdaten-Ökosystem: Entstehung neuer Geschäftsmodelle und Dienstleistungen.</span></li>
                         </ul>
                     </div>
-                    <div class="bg-light-blue p-8 rounded-xl shadow-lg border-2 border-dark-violet">
-                        <h4 class="text-2xl font-montserrat font-bold text-dark-violet mb-6 text-center">Ethische Aspekte</h4>
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
+                        <h4 class="text-2xl font-montserrat font-bold text-dark-violet mb-6 text-left">Ethische Aspekte</h4>
                         <ul class="text-lg text-left space-y-3 custom-list">
                             <li><i class="icon fas fa-balance-scale-left text-red-500"></i><span class="text-content">Digitale Ungleichheit (Gefahr einer Zwei-Klassen-Medizin).</span></li>
                             <li><i class="icon fas fa-user-slash text-red-500"></i><span class="text-content">Autonomie und Kontrollverlust über unsere Gesundheit durch automatisierte Systeme.</span></li>
@@ -696,36 +687,48 @@
         </section>
 
         <!-- Section 7: Fazit und Diskussion & Quellen -->
-        <section id="fazit" class="bg-dark-violet py-20 px-4">
-            <div class="container mx-auto">
+        <section id="fazit" class="intro-background py-20 px-4 relative">
+            <div class="container mx-auto relative z-10">
                 <h2 class="text-4xl font-montserrat font-bold text-accent-turquoise text-center mb-12">
                     Fazit und Diskussion
                 </h2>
 
-                <div class="bg-light-blue p-8 rounded-xl shadow-lg border-2 border-tech-green mb-12">
-                    <h3 class="text-2xl font-montserrat font-bold text-tech-green mb-6 text-center">Zusammenfassung der wichtigsten Erkenntnisse</h3>
-                    <ul class="text-lg text-left space-y-3 custom-list">
-                        <li><i class="icon fas fa-history text-tech-green"></i><span class="text-content">KI in der Medizin hat eine lange Geschichte von Expertensystemen bis zu modernen Deep Learning-Anwendungen.</span></li>
-                        <li><i class="icon fas fa-sync-alt text-tech-green"></i><span class="text-content">Aktuell revolutioniert sie Diagnostik, Medikamentenentwicklung und personalisierte Behandlungen.</span></li>
-                        <li><i class="icon fas fa-rocket text-tech-green"></i><span class="text-content">Die Zukunft verspricht hyper-personalisierte und präventive Gesundheitsversorgung.</span></li>
-                    </ul>
+                <div class="grid md:grid-cols-2 gap-10 mb-16">
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-montserrat font-bold text-tech-green mb-6 text-left">Zusammenfassung der wichtigsten Erkenntnisse</h3>
+                        <ul class="text-lg text-left space-y-3 custom-list">
+                            <li><i class="icon fas fa-history text-tech-green"></i><span class="text-content">KI in der Medizin hat eine lange Geschichte von Expertensystemen bis zu modernen Deep Learning-Anwendungen.</span></li>
+                            <li><i class="icon fas fa-sync-alt text-tech-green"></i><span class="text-content">Aktuell revolutioniert sie Diagnostik, Medikamentenentwicklung und personalisierte Behandlungen.</span></li>
+                            <li><i class="icon fas fa-rocket text-tech-green"></i><span class="text-content">Die Zukunft verspricht hyper-personalisierte und präventive Gesundheitsversorgung.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-light-blue p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-montserrat font-bold text-dark-violet mb-6 text-left">Ausblick und Herausforderungen</h3>
+                        <p class="text-lg text-left">
+                            KI wird die Medizin grundlegend verändern, doch es gilt, Herausforderungen bei Datenschutz, Ethik und Zugangsgerechtigkeit zu meistern, um ihr volles Potenzial verantwortungsvoll zu nutzen.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-light-blue p-8 rounded-xl shadow-lg border-2 border-dark-violet mb-16">
-                    <h3 class="text-2xl font-montserrat font-bold text-dark-violet mb-6 text-center">Ausblick und Herausforderungen</h3>
-                    <p class="text-lg text-center max-w-3xl mx-auto">
-                        KI wird die Medizin grundlegend verändern, doch es gilt, Herausforderungen bei Datenschutz, Ethik und Zugangsgerechtigkeit zu meistern, um ihr volles Potenzial verantwortungsvoll zu nutzen.
-                    </p>
-                    <div class="flex justify-center mt-8">
-                        <i class="fas fa-balance-scale text-6xl text-accent-turquoise"></i>
+                <!-- Video Section -->
+                <div class="mb-16">
+                     <h2 class="text-4xl font-montserrat font-bold text-accent-turquoise text-center mb-8">
+                        Video: KI in der Medizin
+                    </h2>
+                    <div class="bg-light-blue p-4 rounded-xl shadow-lg">
+                         <video class="w-full rounded-lg" controls poster="https://placehold.co/1280x720/0A192F/00FFFF?text=Video-Vorschau">
+                            <source src="Ki-med.mp4" type="video/mp4">
+                            Ihr Browser unterstützt das Video-Tag nicht.
+                        </video>
                     </div>
                 </div>
 
                 <h2 class="text-4xl font-montserrat font-bold text-accent-turquoise text-center mb-12">
                     Quellen und Referenzen
                 </h2>
-                <div class="bg-light-blue p-8 rounded-xl shadow-lg border border-grey-text">
-                    <ol class="list-decimal list-outside pl-5 space-y-3 text-lg text-left">
+                <div class="bg-light-blue p-8 rounded-xl shadow-lg flex justify-center">
+                    <ol class="list-decimal list-outside space-y-3 text-lg text-left w-fit">
                         <li><a href="https://en.wikipedia.org/wiki/MYCIN" target="_blank" class="source-link">MYCIN Expert System: Wikipedia - MYCIN</a></li>
                         <li><a href="https://deepmind.com/research/highlighted-research/alphafold" target="_blank" class="source-link">AlphaFold (DeepMind): DeepMind - AlphaFold</a></li>
                         <li><a href="https://www.who.int/news-room/questions-and-answers/item/artificial-intelligence-in-health" target="_blank" class="source-link">KI in der Gesundheitsversorgung - Überblick: World Health Organization (WHO) - AI in Health</a></li>
